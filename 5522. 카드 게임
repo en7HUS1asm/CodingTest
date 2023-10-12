@@ -1,5 +1,0 @@
-https://www.acmicpc.net/problem/5522
-
-a = [int(input()) for i in range(5)]
-ans = sum(a)
-print(ans)
