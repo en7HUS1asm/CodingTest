@@ -1,0 +1,11 @@
+https://www.acmicpc.net/problem/2744
+
+a = str(input())
+ans = ''
+for i in a:
+	if i == i.upper():
+		ans += i.lower()
+	else:
+		ans += i.upper()
+ 
+print(ans)
