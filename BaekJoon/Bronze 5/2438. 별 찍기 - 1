@@ -1,0 +1,15 @@
+https://www.acmicpc.net/problem/2438
+
+# Sol 1
+
+a = int(input())
+for i in range(a):
+	print("*"*(i+1))
+
+# Sol 2
+
+a = int(input())
+ans = ""
+for i in range(1,a+1):
+	ans += "*"*i + "\n"
+print(ans)
