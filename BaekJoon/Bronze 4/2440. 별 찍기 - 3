@@ -1,0 +1,5 @@
+https://www.acmicpc.net/problem/2440
+
+a = int(input())
+for i in range(a):
+	print("*"*(a-i))
