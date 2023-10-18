@@ -1,5 +1,7 @@
 https://www.acmicpc.net/problem/28235
 
+Sol 1
+
 gu = ["SONGDO", "CODE", "2023", "ALGORITHM"]
 un = ["HIGHSCHOOL", "MASTER", "0611", "CONTEST"]
 
@@ -7,3 +9,8 @@ a = input()
 for i in range(len(gu)):
 	if a == gu[i]:
 		print(un[i])
+
+Sol 2
+
+dc = {"SONGDO": "HIGHSCHOOL", "CODE": "MASTER", "2023": "0611", "ALGORITHM": "CONTEST"}
+print(dc[input()])
