@@ -1,0 +1,8 @@
+https://www.acmicpc.net/problem/2845
+
+a, b = map(int, input().split())
+tr = a*b
+lst = list(map(int, input().split()))
+for i in range(len(lst)):
+	lst[i] -= a*b
+print(*lst)
