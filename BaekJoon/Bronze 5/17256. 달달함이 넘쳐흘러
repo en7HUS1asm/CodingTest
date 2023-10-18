@@ -1,0 +1,6 @@
+https://www.acmicpc.net/problem/17256
+
+al = list(map(int, input().split()))
+cl = list(map(int, input().split()))
+bl = [cl[0]-al[2], cl[1]//al[1], cl[2]-al[0]]
+print(*bl)
