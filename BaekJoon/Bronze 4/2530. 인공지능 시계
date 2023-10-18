@@ -1,0 +1,25 @@
+https://www.acmicpc.net/problem/2530
+
+//딕셔너리 제작
+time = {}
+time['시'], time['분'], time['초'] = map(int, input().split())
+pls = int(input())
+
+//시간 더하기
+time['시'] += pls//3600
+time['분'] += (pls%3600)//60
+time['초'] += (pls%3600)%60
+
+//24시간 맞추기
+while True:
+	if time['초']>=60:
+		time['초'] -= 60
+		time['분'] += 1
+	elif time['분']>=60:
+		time['분'] -= 60
+		time['시'] += 1	
+	elif time['시']>=24:
+		time['시'] -=24
+	else:
+		break;
+print(time['시'], time['분'], time['초'])
