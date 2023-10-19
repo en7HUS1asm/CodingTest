@@ -1,0 +1,8 @@
+https://www.acmicpc.net/problem/2884
+
+h, m = map(int, input().split())
+min = h*60 + m
+min -= 45
+min %= 1440
+ 
+print(min//60, min%60)
