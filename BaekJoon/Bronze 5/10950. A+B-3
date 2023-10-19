@@ -1,0 +1,6 @@
+https://www.acmicpc.net/problem/10950
+
+n = int(input())
+lst = [list(map(int, input().strip().split())) for i in range(n)]
+for i in range(n):
+	print(sum(lst[i]))
