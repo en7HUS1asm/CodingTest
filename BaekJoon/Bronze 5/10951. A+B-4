@@ -1,0 +1,11 @@
+https://www.acmicpc.net/problem/10951
+
+import sys
+input = sys.stdin.readline
+
+while True:
+    input_line = input().strip()
+    if input_line == "":
+        break
+    a, b = map(int, input_line.split())
+    print(a + b)
