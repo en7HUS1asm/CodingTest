@@ -1,0 +1,10 @@
+https://www.acmicpc.net/problem/10952
+
+import sys
+input = sys.stdin.readline
+while True:
+	val = list(map(int, input().split()))
+	if val == [0, 0]:
+		break;
+	else:
+		print(sum(val))
