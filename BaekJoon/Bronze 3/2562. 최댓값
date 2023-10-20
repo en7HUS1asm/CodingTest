@@ -1,0 +1,8 @@
+https://www.acmicpc.net/problem/2562
+
+import sys
+input = sys.stdin.readline
+ 
+lst = list(int(input()) for i in range(9))
+print(max(lst))
+print(lst.index(max(lst))+1)
