@@ -1,0 +1,12 @@
+https://www.acmicpc.net/problem/2577
+
+import sys
+input = sys.stdin.readline
+
+a = int(input())
+b = int(input())
+c = int(input())
+lst = list(str(a*b*c))
+lst = list(map(int, lst))  
+for i in range(10):
+	print(lst.count(i))
