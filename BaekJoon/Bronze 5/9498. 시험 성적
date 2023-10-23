@@ -1,5 +1,7 @@
 https://www.acmicpc.net/problem/9498
 
+# Sol 1
+
 import sys
 input = sys.stdin.readline
  
@@ -16,5 +18,15 @@ elif a>= 60:
 	grade = "D"
 else:
 	grade = "F"
+ 
+print(grade)
+
+# Sol 2
+
+import sys
+input = sys.stdin.readline
+ 
+a = int(input())
+grade = "A" if a >= 90 else "B" if a >= 80 else "C" if a >= 70 else "D" if a >= 60 else "F"
  
 print(grade)
