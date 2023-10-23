@@ -1,0 +1,9 @@
+https://www.acmicpc.net/problem/10871
+
+import sys
+input = sys.stdin.readline
+ 
+n, a = map(int, input().split())
+lst = list(map(int, input().split()))
+lst2 = [i for i in lst if i<a]
+print(*lst2)
