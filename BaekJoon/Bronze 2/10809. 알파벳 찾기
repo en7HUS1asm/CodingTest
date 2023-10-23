@@ -1,0 +1,13 @@
+https://www.acmicpc.net/problem/10809
+
+import sys
+input = sys.stdin.readline
+
+s = input().strip()
+ans = []
+for _ in range(26):
+	ans.append(-1)
+for i in range(len(s)):
+	if ans[ord(s[i])-97] == -1:
+		ans[ord(s[i])-97] = i
+print(*ans)
