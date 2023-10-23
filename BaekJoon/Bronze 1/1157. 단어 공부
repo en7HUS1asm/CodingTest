@@ -1,0 +1,17 @@
+https://www.acmicpc.net/problem/1157
+
+import sys
+input = lambda: sys.stdin.readline().rstrip()
+
+n = input().strip().upper()
+ns = set(n)
+ans = {}
+for i in ns:
+	ans[i] = n.count(i)
+maxi = max(ans, key=ans.get)
+
+maxl = [k for k,v in ans.items() if ans[k] == ans[maxi]]
+if len(maxl) == 1:
+	print(*maxl)
+else:
+	print("?")
