@@ -1,0 +1,17 @@
+https://www.acmicpc.net/problem/8958
+
+import sys
+input = sys.stdin.readline
+
+n = int(input())
+lst = list(input().strip() for i in range(n))
+for i in lst:
+	ans = 0
+	pl = 1
+	for j in range(len(i)):
+		if i[j]=='O':
+			ans += pl
+			pl += 1
+		else:
+			pl = 1
+	print(ans)
