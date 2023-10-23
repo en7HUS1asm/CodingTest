@@ -1,0 +1,11 @@
+https://www.acmicpc.net/problem/3052
+
+import sys
+input = sys.stdin.readline
+
+lst = []
+for i in range(10):
+	lst.append(int(input()))
+	lst[i] = lst[i]%42
+st = set(lst)
+print(len(st))
