@@ -1,0 +1,8 @@
+https://www.acmicpc.net/problem/1100
+
+import sys
+input = sys.stdin.readline
+
+chess = [list(input().strip()) for _ in range(8)]
+chess_2 = [chess[i][j] for i in range(8) for j in range(8) if (i+j)%2==0]
+print(chess_2.count('F'))
