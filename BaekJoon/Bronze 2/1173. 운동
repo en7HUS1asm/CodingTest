@@ -1,0 +1,24 @@
+https://www.acmicpc.net/problem/1173
+
+import sys
+input = sys.stdin.readline
+N, m, M, T, R = map(int, input().split())
+
+def act(n):
+    if n == 0:
+        return (0, m)
+    else:
+        [cnt, mag] = act(n - 1)
+        if cnt == -1:
+            return(-1,-1)
+        while True:
+            cnt += 1
+            if mag + T <= M:
+                mag += T
+                return (cnt, mag)
+            elif mag == m:
+                return(-1,-1)
+            else:
+                mag = max(mag-R,m)
+                
+print(act(N)[0])
