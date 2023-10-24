@@ -1,0 +1,9 @@
+https://www.acmicpc.net/problem/1076
+
+ans = ""
+ju = ['black', 'brown', 'red', 'orange', 'yellow', 'green', 'blue', 'violet', 'grey', 'white']
+a, b, c = map(str.strip, [input(), input(), input()])
+ans += str(ju.index(a))
+ans += str(ju.index(b))
+ans += '0' * ju.index(c)
+print(int(ans))
