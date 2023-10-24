@@ -1,0 +1,17 @@
+https://www.acmicpc.net/problem/1159
+
+import sys
+input = sys.stdin.readline
+
+n = int(input())
+lst = [input().strip()[:1] for i in range(n)]
+lset = set(lst)
+lset = sorted(list(lset))
+ans = []
+for i in lset:
+	if lst.count(i) >=5:
+		ans.append(i)
+if len(ans) ==0:
+	print("PREDAJA")
+else:
+	print("".join(ans))
