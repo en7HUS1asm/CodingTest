@@ -1,0 +1,51 @@
+https://www.acmicpc.net/problem/1333
+
+# 여기서는 처음에 복잡한 코드를 사용햇는데 복잡한 코드를 사용하면 timeout이나 오류가 뜬다. 
+
+Sol 1)
+
+import sys
+input = sys.stdin.readline
+
+N, L, D = map(int, input().split())
+ans = ""
+tim = 0
+for _ in range(N):
+    ans += "0"*L
+    ans += "1"*5
+# ans = ans[:-5]
+ans = [i for i, val in enumerate(ans) if val == "0"]
+
+tim = 0
+answ = 0
+while True:
+    if not tim in ans:
+        answ = tim
+        break;
+    tim += D
+print(answ)
+
+error(요정도만 해도 제출때 런타임에러걸렸음))
+
+import sys
+input = sys.stdin.readline
+# N : N곡, L: 노래길이L초, D:전화벨
+N, L, D = map(int, input().split())
+ans = ""
+tim = 0
+for _ in range(N):
+    ans += "0"*L
+    ans += "1"*5
+ans = ans[:-5]
+
+tim = 0
+answ = 0
+while True:
+    if tim <= len(ans) and ans[tim] != "0":
+        answ = tim
+        break;
+    elif tim > len(ans):
+        answ = tim
+        break;
+    tim += D
+print(answ)
