@@ -1,0 +1,10 @@
+https://www.acmicpc.net/problem/1297
+
+import sys
+input = sys.stdin.readline
+
+d, h, w = map(int, input().split())
+ans = d**2/(h**2+w**2)
+ans = ans**0.5
+h, d = int(ans*h), int(ans*w)
+print(h, d)
