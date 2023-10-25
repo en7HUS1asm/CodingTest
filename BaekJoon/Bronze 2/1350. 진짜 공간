@@ -1,0 +1,15 @@
+https://www.acmicpc.net/problem/1350
+
+import sys
+input = sys.stdin.readline
+
+N = int(input())
+F = list(map(int, input().split()))
+C = int(input())
+
+ans = 0
+
+for i in range(len(F)) :
+    if F[i]//C != F[i]/C:
+        F[i] = (F[i]//C+1)*C
+print(sum(F))
