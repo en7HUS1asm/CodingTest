@@ -1,0 +1,15 @@
+https://www.acmicpc.net/problem/1233
+
+import sys
+input = sys.stdin.readline
+
+s1, s2, s3 = map(int, input().split())
+summ = {}
+for i in range(s1+s2+s3):
+    summ[i+3] = 1
+for i in range(s1):
+    for j in range(s2):
+        for k in range(s3):
+            summ[i+j+k+3] += 1
+mkey = max(summ, key=lambda k: summ[k])
+print(mkey)
