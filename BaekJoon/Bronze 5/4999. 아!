@@ -1,0 +1,5 @@
+https://www.acmicpc.net/problem/4999
+
+a = input().strip()
+b = input().strip()
+print("go" if len(a)>=len(b) else "no")
