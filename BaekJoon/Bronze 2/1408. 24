@@ -1,0 +1,15 @@
+https://www.acmicpc.net/problem/1408
+
+a = list(map(int, input().split(":")))
+b = list(map(int, input().split(":")))
+a_tim = a[0]*60*60 + a[1]*60 +a[2]
+b_tim = b[0]*60*60 + b[1]*60 + b[2]
+ans = []
+tim = 0
+tim = b_tim - a_tim
+if tim<0:
+	tim += 86400
+ans.append(str(tim//3600).zfill(2))
+ans.append(str(tim%3600//60).zfill(2))
+ans.append(str(tim%3600%60).zfill(2))
+print(":".join(ans))
