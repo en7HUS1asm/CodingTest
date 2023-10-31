@@ -1,0 +1,12 @@
+https://www.acmicpc.net/problem/2292
+
+n = int(input())-1
+ans = 0
+var = 1
+while True:
+	if n <= ans*6:
+		print(var)
+		break;
+	else:
+		ans += var
+		var += 1
