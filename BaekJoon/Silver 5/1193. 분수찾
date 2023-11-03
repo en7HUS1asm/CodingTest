@@ -1,0 +1,18 @@
+https://www.acmicpc.net/problem/1193
+
+import sys
+input = sys.stdin.readline
+
+n = int(input())
+tmp = 0
+
+while True:
+	tmp += 1
+	if n <= sum(range(tmp+1)):
+		a = sum(range(tmp+1))-n+1
+		b = tmp-a+1
+		break;
+if tmp%2==0:
+	print(f'{b}/{a}')
+else:
+	print(f'{a}/{b}')
