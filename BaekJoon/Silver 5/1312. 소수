@@ -1,0 +1,11 @@
+https://www.acmicpc.net/problem/1312
+
+import sys
+input = sys.stdin.readline
+A,B,N = map(int, input().split())
+su = A%B
+for i in range(N):
+	ans = (su*10)//B
+	su = (su*10)%B
+print(ans)
+	
