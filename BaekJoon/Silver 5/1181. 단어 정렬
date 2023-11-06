@@ -1,0 +1,11 @@
+https://www.acmicpc.net/problem/1181
+
+import sys
+input = sys.stdin.readline
+
+N = int(input())
+lst = [input().strip() for i in range(N)]
+lst = list(set(lst))
+lst.sort(key=lambda x: (len(x), x))
+for i in lst:
+    print(i)
