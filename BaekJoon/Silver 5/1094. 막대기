@@ -1,0 +1,8 @@
+https://www.acmicpc.net/problem/1094
+
+import sys
+input = sys.stdin.readline
+
+N = int(input())
+N_2 = bin(N)
+print(N_2.count("1"))
