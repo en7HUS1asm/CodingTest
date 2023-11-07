@@ -1,0 +1,9 @@
+https://www.acmicpc.net/problem/1427
+
+import sys
+input = sys.stdin.readline
+
+N = input().strip()
+N = list(N)
+N.sort(reverse = True)
+print("".join(N))
