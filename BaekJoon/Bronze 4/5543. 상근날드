@@ -1,0 +1,8 @@
+https://www.acmicpc.net/problem/5543
+
+import sys
+input = sys.stdin.readline
+
+lst = [int(input()) for _ in range(5)]
+ans = min([lst[0], lst[1], lst[2]]) + min([lst[3],lst[4]]) - 50
+print(ans)
