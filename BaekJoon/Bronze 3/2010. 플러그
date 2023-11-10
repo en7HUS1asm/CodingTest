@@ -1,0 +1,9 @@
+https://www.acmicpc.net/problem/2010
+
+import sys
+input = sys.stdin.readline
+
+n = int(input())
+lst = [int(input()) for _ in range(n)]
+ans = sum(lst)-len(lst)+1
+print(ans)
