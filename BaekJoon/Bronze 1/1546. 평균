@@ -1,0 +1,10 @@
+https://www.acmicpc.net/problem/1546
+
+import sys
+input = sys.stdin.readline
+
+n = int(input())
+lst = list(map(int, input().split()))
+ans = sum(lst)*100
+ans = ans / (max(lst)*n)
+print(ans)
