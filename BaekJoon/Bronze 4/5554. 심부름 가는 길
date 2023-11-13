@@ -1,0 +1,8 @@
+https://www.acmicpc.net/problem/5554
+
+import sys
+input = sys.stdin.readline
+lst = [int(input()) for _ in range(4)]
+ans = sum(lst)
+print(ans//60)
+print(ans%60)
