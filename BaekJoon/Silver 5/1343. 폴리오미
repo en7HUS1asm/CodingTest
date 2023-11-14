@@ -1,0 +1,19 @@
+https://www.acmicpc.net/problem/1343
+
+import sys
+input = sys.stdin.readline
+
+lst = list(input())
+for i in range(len(lst)-3):
+	if lst[i:i+4] == ['X', 'X', 'X', 'X']:
+		lst[i:i+4] = ['A', 'A', 'A', 'A']
+	elif lst[i:i+2] == ['X','X']:
+		lst[i:i+2] = ['B', 'B']
+if lst[-3:-1]==['X', 'X']:
+	lst[-3:-1] = ['B', 'B']
+if lst[-2:]==['X', 'X']:
+	lst[-2:] = ['B', 'B']
+ans = "".join(lst)
+if ans.count('X') != 0:
+	ans = "-1"
+print(ans)
