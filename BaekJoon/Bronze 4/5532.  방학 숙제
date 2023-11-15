@@ -1,0 +1,13 @@
+https://www.acmicpc.net/problem/5532
+
+import sys
+input = sys.stdin.readline
+
+lst = [int(input()) for i in range (5)]
+if lst[1] != 1:
+	lst[1] -= 1
+if lst[2] != 1:
+	lst[2] -= 1
+ans = max(lst[2]//lst[4],lst[1]//lst[3])
+ans = lst[0]-ans-1
+print(ans)
