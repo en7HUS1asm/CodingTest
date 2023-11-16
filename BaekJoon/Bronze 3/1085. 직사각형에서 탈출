@@ -1,0 +1,10 @@
+https://www.acmicpc.net/problem/1085
+
+import sys
+input = sys.stdin.readline
+
+lst = list(map(int, input().split()))
+a = min(lst[0],abs(lst[2]-lst[0]))
+b = min(lst[1],abs(lst[3]-lst[1]))
+ans = min(a,b)
+print(ans)
